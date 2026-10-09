@@ -1,6 +1,8 @@
 def sum_id(n):
   """
-  Returns the sum of the integers from 1 to n.
+  integer -> integer
+
+  returns the sum of the integers from 1 to n
 
   >>> sum_id(5)
   15
@@ -17,7 +19,9 @@ def sum_id(n):
 
 def sum_squares(n):
   """
-  Returns the sum of the squares from 1 to n.
+  integer -> integer
+
+  returns the sum of the squares from 1 to n
 
   >>> sum_squares(3)
   14
@@ -34,11 +38,13 @@ def sum_squares(n):
 
 def sum(n,f):
   """
-  Returns the sum of f(i) from 1 to n.
+  integer, function -> number
 
-  >>> sum(5, lambda x: x)
+  returns the sum of f(i) from 1 to n
+
+  >>> sum(5,lambda x: x)
   15
-  >>> sum(3, lambda x: x**2)
+  >>> sum(3,lambda x: x**2)
   14
   """
   total = 0
@@ -51,11 +57,13 @@ def sum(n,f):
 
 def product(n,f):
   """
-  Multiplies f(i) for all i from 1 to n.
+  integer, function -> number
 
-  >>> product(4, lambda x: x)
+  multiplies f(i) for all i from 1 to n
+
+  >>> product(4,lambda x: x)
   24
-  >>> product(3, lambda x: x**2)
+  >>> product(3,lambda x: x**2)
   36
   """
   total = 1
@@ -68,11 +76,13 @@ def product(n,f):
 
 def combine_sequence(n, combine=lambda x, y: x + y, f=lambda x: x):
   """
-  Combines f(i) from 1 to n using combine.
+  integer, function, function -> number
 
-  >>> combine_sequence(5, lambda x, y: x + y, lambda x: x)
+  combines f(i) from 1 to n using combine
+
+  >>> combine_sequence(5,lambda x,y: x+y,lambda x: x)
   15
-  >>> combine_sequence(4, lambda x, y: x * y, lambda x: x)
+  >>> combine_sequence(4,lambda x,y: x*y,lambda x: x)
   24
   """
   total = f(1)

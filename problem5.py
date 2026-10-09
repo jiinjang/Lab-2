@@ -1,6 +1,8 @@
 def trailing_zeros(n):
   """
-  Returns the number of zeros at the end of n.
+  integer -> integer
+
+  returns the number of zeros at the end of n
 
   >>> trailing_zeros(300)
   2
@@ -18,7 +20,9 @@ def trailing_zeros(n):
 
 def trailing_zeros_in_factorial(n):
   """
-  Returns the number of trailing zeros in n!.
+  integer -> integer
+
+  returns the number of trailing zeros in n!
 
   >>> trailing_zeros_in_factorial(5)
   1
